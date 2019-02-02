@@ -8,11 +8,6 @@ import android.content.IntentFilter;
 import android.content.Loader;
 import android.database.Cursor;
 import android.os.Bundle;
-import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.recyclerview.widget.RecyclerView;
-import androidx.recyclerview.widget.StaggeredGridLayoutManager;
-import androidx.appcompat.widget.Toolbar;
 import android.text.Html;
 import android.text.format.DateUtils;
 import android.util.Log;
@@ -29,6 +24,12 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.GregorianCalendar;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
+import androidx.recyclerview.widget.RecyclerView;
+import androidx.recyclerview.widget.StaggeredGridLayoutManager;
+import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
 /**
  * An activity representing a list of Articles. This activity has different presentations for
@@ -56,11 +57,7 @@ public class ArticleListActivity extends AppCompatActivity
     setContentView(R.layout.activity_article_list);
 
     mToolbar = (Toolbar) findViewById(R.id.toolbar);
-
-    final View toolbarContainerView = findViewById(R.id.toolbar_container);
-
     mSwipeRefreshLayout = (SwipeRefreshLayout) findViewById(R.id.swipe_refresh_layout);
-
     mRecyclerView = (RecyclerView) findViewById(R.id.recycler_view);
     getLoaderManager().initLoader(0, null, this);
 

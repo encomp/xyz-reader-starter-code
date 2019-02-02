@@ -43,4 +43,31 @@
         <item name="android:ellipsize">end</item>
         <item name="android:maxLines">2</item>
     </style>
+
+    <style name="FrameLayout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@color/photo_placeholder</item>
+    </style>
+
+    <style name="FragmentImage">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/detail_photo_height</item>
+        <item name="android:scaleType">centerCrop</item>
+    </style>
+
+    <style name="FabIcon">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">bottom|end</item>
+        <item name="android:layout_marginBottom">@dimen/fab_margin</item>
+        <item name="android:layout_marginRight">@dimen/fab_margin</item>
+        <item name="android:background">@drawable/add_fab_background</item>
+        <item name="android:clickable">true</item>
+        <item name="android:contentDescription">@string/action_share</item>
+        <item name="android:elevation">@dimen/fab_elevation</item>
+        <item name="android:focusable">true</item>
+        <item name="android:stateListAnimator">@anim/fab_state_list_anim</item>
+    </style>
+
 </resources>

@@ -26,7 +26,6 @@ import java.util.Date;
 import java.util.GregorianCalendar;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.Toolbar;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.recyclerview.widget.StaggeredGridLayoutManager;
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
@@ -41,7 +40,6 @@ public class ArticleListActivity extends AppCompatActivity
     implements LoaderManager.LoaderCallbacks<Cursor> {
 
   private static final String TAG = ArticleListActivity.class.toString();
-  private Toolbar mToolbar;
   private SwipeRefreshLayout mSwipeRefreshLayout;
   private RecyclerView mRecyclerView;
 
@@ -56,7 +54,6 @@ public class ArticleListActivity extends AppCompatActivity
     super.onCreate(savedInstanceState);
     setContentView(R.layout.activity_article_list);
 
-    mToolbar = (Toolbar) findViewById(R.id.toolbar);
     mSwipeRefreshLayout = (SwipeRefreshLayout) findViewById(R.id.swipe_refresh_layout);
     mRecyclerView = (RecyclerView) findViewById(R.id.recycler_view);
     getLoaderManager().initLoader(0, null, this);

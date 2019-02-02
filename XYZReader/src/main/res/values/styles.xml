@@ -25,7 +25,7 @@
     <style name="ArticleTitle" parent="TextAppearance.AppCompat.Headline">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:paddingTop">@dimen/normal_spacing</item>
+        <item name="android:paddingTop">@dimen/small_spacing</item>
         <item name="android:paddingLeft">@dimen/normal_spacing</item>
         <item name="android:paddingRight">@dimen/normal_spacing</item>
         <item name="android:paddingBottom">@dimen/tiny_spacing</item>
@@ -39,7 +39,7 @@
         <item name="android:layout_height">wrap_content</item>
         <item name="android:paddingLeft">@dimen/normal_spacing</item>
         <item name="android:paddingRight">@dimen/normal_spacing</item>
-        <item name="android:paddingBottom">@dimen/tiny_spacing</item>
+        <item name="android:paddingBottom">@dimen/normal_spacing</item>
         <item name="android:ellipsize">end</item>
         <item name="android:maxLines">2</item>
     </style>
